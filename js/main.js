@@ -8,6 +8,11 @@ var updateDistance = function() {
 };
 
 window.addEventListener('load', function() {
+  navigator.serviceWorker
+  .register('/LevelYourVan/sw_cached_files.js')
+  .then(reg => console.log('Service Worker: Registered'))
+  .catch(err => console.log(`Service Worker: Error: ${err}`, true));
+
   let lr = localStorage.getItem('levelYourVan_left_right'),
       fb = localStorage.getItem('levelYourVan_front_back');
   left_right = lr == null ? 175 : Number.parseInt(lr);
