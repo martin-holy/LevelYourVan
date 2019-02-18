@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>Level Your Van</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta charset="utf-8" />
+    <script src="js/main.js"></script>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="title">Level Your Van</div>
+    <div id="wrapper">
+      <div id="main">
+        <div id="front_div">
+          <div id="front_left_wheel">0</div>
+          <div id="left_right_div">
+            <div id="left_right_line"></div>
+            <input id="left_right" type="number" value="175" pattern="^[0-9]+(\.[0-9]+)?$" onchange="updateDistance();">
+          </div>
+          <div id="front_right_wheel">0</div>
+        </div>
+        <div id="front_back_div">
+          <div id="front_back_line"></div>
+          <input id="front_back" type="number" value="295" pattern="^[0-9]+(\.[0-9]+)?$" onchange="updateDistance();">
+        </div>
+        <div id="back_div">
+          <div id="back_left_wheel">0</div>
+          <div style="flex-grow: 1;"></div>
+          <div id="back_right_wheel">0</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
