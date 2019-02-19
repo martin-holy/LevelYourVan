@@ -13,6 +13,7 @@ self.addEventListener('install', e => {
         '/LevelYourVan/manifest.json',
         '/LevelYourVan/css/main.css',
         '/LevelYourVan/img/icon-208x208.png',
+        '/LevelYourVan/img/background.gif',
         '/LevelYourVan/js/main.js'
       ]);
     })

@@ -102,4 +102,5 @@ input {
   background-color: #292C2E;
   width: 50px;
   text-align: center;
+  overflow: hidden;
 }
